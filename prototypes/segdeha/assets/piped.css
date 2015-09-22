@@ -1,0 +1,58 @@
+.piped {
+    background: #333;
+    font: 100 16px/3 Helvetica, sans-serif;
+    height: 48px;
+    width: 384px;
+}
+    .piped ul {
+        display: -webkit-flex;
+        display:         flex;
+        height: 100%;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+        .piped ul li {
+            -webkit-flex: 1 1 auto;
+                    flex: 1 1 auto;
+            text-align: center;
+        }
+            .piped ul li a {
+                background: rgba(255,255,255,0);
+                color: #ccc;
+                display: block;
+                height: 100%;
+                position: relative;
+                width: 100%;
+            }
+                .piped ul li a:hover {
+                    background: rgba(255,255,255,0.1);
+                    color: white;
+                    text-decoration: none;
+                }
+                .piped ul li a:before, .piped ul li a:after {
+                    background: #ccc;
+                    content: '';
+                    position: absolute;
+                    top: 33%;
+                    width: 1px;
+                    height: 34%;
+                    transition: 0.25s;
+                }
+                .piped ul li a:before {
+                    left: 0;
+                }
+                .piped ul li a:after {
+                    right: -1px;
+                }
+                .piped ul li:first-child a:before {
+                    display: none;
+                }
+                .piped ul li:last-child a:after {
+                    display: none;
+                }
+                .piped ul li a:hover:before, .piped ul li a:hover:after {
+                    height: 100%;
+                    top: 0;
+                }

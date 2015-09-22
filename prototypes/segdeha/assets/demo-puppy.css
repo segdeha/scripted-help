@@ -1,0 +1,35 @@
+/*	Demo Puppy CSS
+	@author Andrew Hedges <andrew@hedges.name>
+	@date 2015-09-21
+*/
+
+/* initial state is hidden */
+.demo-puppy-popover {
+	background: #ccc;
+	border: solid 2px black;
+	border-radius: 7px;
+	display: none;
+	height: 100px;
+	left: 0;
+	padding: 0 1em;
+	position: absolute;
+	top: 0;
+	width: 200px;
+}
+	.demo-puppy-popover:after {
+		background: #ccc;
+		content: '';
+		position: absolute;
+		top: -7px;
+		left: 14px;
+		border: solid 2px black;
+		border-right: none;
+		border-bottom: none;
+		width: 10px;
+		height: 10px;
+		-webkit-transform: rotate(45deg);
+		        transform: rotate(45deg);
+	}
+	.demo-puppy-popover.show {
+		display: block;
+	}

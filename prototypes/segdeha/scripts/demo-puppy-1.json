@@ -1,0 +1,25 @@
+{
+	"name" : "demo-puppy-1",
+	"actions" : [
+		{
+			"selector" : "figure img",
+			"triggers" : ["click"],
+			"content"  : "<p>Demo Puppy loves you!</p>"
+		},
+		{
+			"selector" : "aside",
+			"triggers" : ["mouseover"],
+			"content"  : "<p>OK, stats totally lie. Still, it sounds convincing, right?</p>"
+		},
+		{
+			"selector" : "[href='/create/']",
+			"triggers" : ["mouseover", 10000],
+			"content"  : "<p>Why not <a href='/create/'>create an account</a> and give Demo Puppy a whirl?</p>"
+		},
+		{
+			"selector" : "[href='/contact/']",
+			"triggers" : ["next", "mouseover"],
+			"content"  : "<p><a href='/contact/'>Drop us a line</a> anytime. We’d love to hear from you!</p>"
+		}
+	]
+}
