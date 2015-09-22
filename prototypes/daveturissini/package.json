@@ -1,0 +1,17 @@
+{
+  "scripts": {
+    "start": "jspm-server --port=3000",
+    "postinstall": "jspm install"
+  },
+  "jspm": {
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.8.24",
+      "babel-runtime": "npm:babel-runtime@^5.8.24",
+      "core-js": "npm:core-js@^1.1.4"
+    }
+  },
+  "devDependencies": {
+    "jspm": "^0.16.6",
+    "jspm-server": "johnraz/jspm-server#jspm-0.16-compatibility"
+  }
+}
